@@ -18,10 +18,13 @@ console.log(discountYoung)
 let discountaged = price - (price * 40 / 100);
 console.log(discountaged)
 
+let discount = discountYoung.toFixed(2)
+let Discount = discountaged.toFixed(2)
+
 if (age < 18){
-    document.getElementById('ticket').innerHTML = discountYoung;
+    document.getElementById('ticket').innerHTML = discount;
 } else if (age > 65){
-    document.getElementById('ticket').innerHTML = discountaged;
+    document.getElementById('ticket').innerHTML = Discount;
 }else {
     document.getElementById('ticket').innerHTML = price;
 }
